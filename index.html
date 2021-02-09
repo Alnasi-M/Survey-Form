@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Surevy Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1 id="title">Product Feedback Survey Form</h1>
+	<p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+	<div id="body">
+		<form id="survey-form">
+
+			<label id="name-lebel" for="name">
+				<p>Name:</p>
+			</label>
+			<input id="name" type="text" placeholder="Enter Your Name" required>
+
+			<label id="email-label" for="email">
+				<p>Email:</p>
+			</label>
+			<input id="email" type="email" placeholder="Enter Your Email" required>
+
+			<label id="number-label" for="number">
+				<p>Age</p>
+			</label>
+			<input id="number" type="number" placeholder="Enter Your Age" min="10" max="50" required>
+
+			<p>When you first used the prodcut, what was your overall impression of it?</p>
+			<select id="dropdown">
+				<option value="Default">Select Current Impression</option>
+				<option value="Positive">Positive</option>
+				<option value="Really Positive">Really Posittive</option>
+				<option value="It Was Alright">It Was Alright</option>
+				<option value="Negative">Negative</option>
+				<option value="Really Negative">Really Negative</option>
+			</select>
+
+			<p>What do you like most about it?</p>
+			<label id="answer-label" for="what do you like">
+				<p></p>
+			</label>
+			<input id="answer" type="text" placeholder="Type your answer here" required>
+
+
+			<p>If you could buy the product today, would you?</p>
+			<input type="radio" name="honesty" value="1">Absolutely</input>
+			<br>
+			<input type="radio" name="honesty" value="2">Let me think about it</input>
+  			<br>
+ 			<input type="radio" name="honesty" value="3">Don't think so</input>
+			<br>
+ 			<input type="radio" name="honesty" value="4">Would not dream of it</input>
+			<br>
+
+			<p>How likely are you to recommend this product to someone you know?</p>
+			<input type="checkbox" name="Feedback" value="1">Not at all likely</input>
+			<br>
+			<input type="checkbox" name="Feedback" value="2">Slightly likely</input>
+			<br>
+			<input type="checkbox" name="Feedback" value="3">Extremely likely</input>
+			<br>
+
+			<p>Any comments or suggestions?</p>
+			<textarea id="comment" rows="7" cols="40" placeholder="Enter your comment here.."></textarea>
+			<br>
+			<input id="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
